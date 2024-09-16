@@ -2,14 +2,31 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+
+/* for Full Website  */
+@font-face {
+  font-family: poppins;
+  src: url('./fonts/Poppins-Regular.woff');
 }
+
+/* font for logo  */
+@font-face {
+  font-family: mont-logo;
+  src: url('./fonts/Montserrat-Regular.woff');
+}
+
+.logo{
+  font-family: mont-logo;
+}
+
+/* :root {
+  --background: #44444c;
+  --foreground: #44444c;
+} */
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
+    --background: #222222;
     --foreground: #ededed;
   }
 }
@@ -17,7 +34,7 @@
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: poppins;
 }
 
 @layer utilities {
